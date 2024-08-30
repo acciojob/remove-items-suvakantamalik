@@ -1,5 +1,10 @@
 //your JS code here. If required.
-let select = document.getElementById("colorSelect");
-select.addEventListener("click", function(event) {
-	select.remove(select.selectedIndex);
-});
+let btn = document.getElementById("btn");
+btn.addEventListener("click", function(event) {
+	const selElement = document.getElementById("colorSelect");
+	const selIdx = selElement.selectedIndex;
+
+	if(selIdx !== -1){
+		selElement.remove(selIdx);
+	}
+}); 
